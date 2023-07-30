@@ -13,7 +13,8 @@
     "start:web:electron": "npm run build:web && cross-env APP_ENV=production npm run start:electron",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": ""
   },
   "keywords": [],
   "author": "akirco",
