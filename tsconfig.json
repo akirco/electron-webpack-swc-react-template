@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "allowJs": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@render/*": ["./app/renderer/src/*"],
+      "@main/*": ["./app/main/*"],
+      "@preload/*": ["./app/preload/*"]
+    }
+  },
+  "include": [
+    "./app/renderer/src/**/*.ts",
+    "./app/renderer/src/**/*.tsx",
+    "./app/main/**/*.ts",
+    "./app/preload/*.ts",
+    "./webpack.config.ts",
+    "./webpack-electron.config.ts"
+  ],
+  "exclude": ["node_modules", "build", "dist"]
+}
